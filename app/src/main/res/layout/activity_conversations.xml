@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE7E7"
+    android:backgroundTint="#F6F2F2"
+    android:foregroundTint="#B62929">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversationsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="1747dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="45dp"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="57dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="1dp"
+        android:text="order"
+        android:onClick="getSpeechInput"
+        app:srcCompat="@drawable/ic_baseline_mic_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/send"
+        android:layout_width="57dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+
+        android:layout_marginBottom="0dp"
+
+        app:srcCompat="@drawable/ic_baseline_send_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/service"
+
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:text="Service Chat"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginEnd="-18dp"
+        android:layout_marginRight="-18dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_toStartOf="@+id/send"
+        android:layout_toLeftOf="@+id/send"
+        android:layout_toEndOf="@+id/mic"
+        android:layout_toRightOf="@+id/mic"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="write a message to the service"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_toEndOf="@+id/service"
+        android:layout_toRightOf="@+id/service"
+        app:srcCompat="@drawable/ic_baseline_chat_24" />
+
+
+</RelativeLayout>

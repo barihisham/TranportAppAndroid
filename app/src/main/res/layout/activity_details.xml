@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/orderNr"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:textSize="20dp"
+            android:text="order number"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="66dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderNr"
+            android:layout_marginTop="4dp"
+            android:text="date"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="404dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="4dp"
+            android:text="from"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="404dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from"
+            android:layout_marginTop="5dp"
+            android:text="to"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="3dp"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteY="181dp" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to"
+            android:layout_marginTop="0dp"
+            android:text="weight"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="3dp"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteY="271dp"
+            />
+
+        <TextView
+            android:id="@+id/isGlass"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weight"
+            android:layout_marginTop="5dp"
+            android:text="glass"
+            tools:layout_editor_absoluteX="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteY="298dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="#e0dfdc"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text=" Details" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="1dp"
+        android:background="#F8F7F7"
+        android:backgroundTint="#C8ADAD">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F8F7F7"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/googleMaps_icon_from"
+                android:layout_width="25dp"
+                android:layout_height="26dp"
+                android:layout_below="@+id/orderNr"
+
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="9dp"
+                app:srcCompat="@drawable/google_maps" />
+
+            <ImageView
+                android:id="@+id/googleMaps_icon_to"
+                android:layout_width="25dp"
+                android:layout_height="26dp"
+                android:layout_above="@+id/detailsButton"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/google_maps" />
+
+            <TextView
+                android:id="@+id/orderNr"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="order number
+"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderNr"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/googleMaps_icon_from"
+                android:layout_toRightOf="@+id/googleMaps_icon_from"
+                android:text="from"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/from"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/googleMaps_icon_to"
+                android:layout_toRightOf="@+id/googleMaps_icon_to"
+                android:text="to"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/detailsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/to"
+                android:text="Order details"
+                app:backgroundTint="#03A9F4" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
